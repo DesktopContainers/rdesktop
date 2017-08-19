@@ -10,4 +10,4 @@ RUN apt-get -q -y update && \
 RUN mkdir /home/app/.vnc && \
     touch /home/app/.vnc/rdesktop.log; \
     chown app.app -R /home/app/.vnc; \
-    echo 'rdesktop -x m -f -P -D $RDESKTOP_OPTS $RDESKTOP_SERVER 2>&1 | logger' >> /bin/ssh-app.sh;
+    echo 'rdesktop -x m -f -P -D $RDESKTOP_OPTS $RDESKTOP_SERVER 2>&1 | logger' >> /usr/local/bin/bin/ssh-app.sh;
