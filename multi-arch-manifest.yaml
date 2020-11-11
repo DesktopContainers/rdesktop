@@ -1,0 +1,21 @@
+image: desktopcontainers/rdesktop:latest
+manifests:
+  - image: desktopcontainers/rdesktop:latest-amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: desktopcontainers/rdesktop:latest-arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
+  - image: desktopcontainers/rdesktop:latest-arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: desktopcontainers/rdesktop:latest-arm32v6
+    platform:
+      architecture: arm
+      os: linux
+      variant: v6
